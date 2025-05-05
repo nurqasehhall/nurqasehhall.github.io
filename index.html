@@ -25,14 +25,11 @@
 		<section
 			class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 			<div class="content">
-				<h1>Nur Qaseh Hall</h1>
-				<p class="major">Dewan kahwin yg ada kat temerloh</p>
-				<ul class="actions stacked">
-					<li><a href="#first" class="button big wide smooth-scroll-middle">Ketahui Lebih Lanjut</a></li>
-				</ul>
+				<h1>Nur Qaseh Hall – Dewan Eksklusif di Temerloh</h1>
+				<p class="major">Nikmati pengalaman majlis yang istimewa di Nur Qaseh Hall, dewan eksklusif yang terletak strategik di Temerloh. Lokasi yang tenang dan elegan menjadikan ia pilihan utama untuk majlis perkahwinan dan acara rasmi yang berprestij.</p>
 			</div>
 			<div class="image">
-				<img src="images/banner.jpg" alt="" />
+				<img src="images/images (7).jpg" alt="" />
 			</div>
 		</section>
 
@@ -40,56 +37,70 @@
 		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
 			id="first">
 			<div class="content">
-				<h2>All-in-one</h2>
-				<p>Pakej kami termasuk decoration, katering, photographer, andaman dan sebagainya</p>
-				<ul class="actions stacked">
-					<li><a href="#" class="button">Learn More</a></li>
-				</ul>
+				<h2>Pakej Lengkap – Semua Dalam Satu</h2>
+				<p>Kami menawarkan pakej perkahwinan serba lengkap yang merangkumi dekorasi dewan, sajian untuk tetamu dan pengantin, jurugambar profesional, bilik solekan, serta perkhidmatan andaman. Jimat masa dan tenaga tanpa perlu cari vendor berasingan – semua tersedia di bawah satu bumbung.</p>
 			</div>
 			<div class="image">
-				<img src="images/spotlight01.jpg" alt="" />
+				<img src="images/images (5).jpg" alt="" />
 			</div>
 		</section>
 
 		<!-- Three -->
 		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
 			<div class="content">
-				<h2>Tempat yang selesa</h2>
-				<p>Dewan ada aircond, hiasan yang cantik.</p>
-				<ul class="actions stacked">
-					<li><a href="#" class="button">Learn More</a></li>
-				</ul>
+				<h2>Dewan Selesa & Serba Lengkap</h2>
+				<p>Dewan kami dilengkapi pendingin hawa, kemudahan khemah, hiasan menarik serta fasiliti penting seperti surau dan tandas untuk keselesaan para tetamu. Suasana yang selesa memastikan setiap detik majlis anda berjalan lancar dan menyenangkan.</p>
 			</div>
 			<div class="image">
-				<img src="images/spotlight02.jpg" alt="" />
+				<img src="images/images (9).jpg" alt="" />
 			</div>
 		</section>
 
 		<!-- Four -->
 		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
 			<div class="content">
-				<h2>Parking yang luas</h2>
-				<p>Boleh jemput ramai orang</p>
-				<ul class="actions stacked">
-					<li><a href="#" class="button">Learn More</a></li>
-				</ul>
+				<h2>Ruang Parkir Luas & Mudah Akses</h2>
+				<p>Dengan kapasiti sehingga 1000 tetamu, lokasi kami menyediakan kawasan parkir yang luas dan berhampiran dewan. Tetamu tidak perlu risau mencari tempat letak kereta – mudah, selamat dan dekat.				</p>
 			</div>
 			<div class="image">
-				<img src="images/spotlight03.jpg" alt="" />
+				<img src="images/images (10).jpg" alt="" />
 			</div>
 		</section>
 
-		<section class="wrapper style1 align-center">
+		<section id="kalendar" class="wrapper style1 align-center">
 			<div class="inner">
 				<header>
 					<h2>Semak Tarikh Anda</h2>
 				</header>
-				<p>Pilih tarikh, kemudian klik butang di bawah. Selain itu, anda juga boleh melihat kalendar tempahan kami.</p>
-				<div style="display: flex; justify-content: center; align-items: center; gap: 1rem;">
-					<input type="date" id="tarikh" />
-					<p id="statusDewan" style="margin: 0;"></p>
+				<p>Pilih tarikh, kemudian klik butang di bawah. Selain itu, anda juga boleh melihat kalendar tempahan
+					kami.</p>
+				<div>
+					<div id="customDatePicker">
+						<div class="calendar-header">
+							<button class="nav-button" onclick="prevMonth()">🡠</button>
+							<h3 id="current-month-year"></h3>
+							<button class="nav-button" onclick="nextMonth()">🡢</button>
+						</div>
+
+						<div class="calendar-grid">
+							<div class="day-header">I</div>
+							<div class="day-header">S</div>
+							<div class="day-header">R</div>
+							<div class="day-header">K</div>
+							<div class="day-header">J</div>
+							<div class="day-header">S</div>
+							<div class="day-header">A</div>
+
+							<!-- Days will be populated by JavaScript -->
+							<div id="calendar-days" class="days-grid"></div>
+						</div>
+
+						<input type="hidden" id="tarikh" name="tarikh">
+
+						<p id="statusDewan">Pilih tarikh di kalendar di atas</p>
+					</div>
 				</div>
-				<div class="index">
+				<div>
 					<ul class="actions" style="display: flex; justify-content: center;">
 						<li>
 							<a href="#" class="button primary" onclick="semakTarikh(); return false;">Semak Tarikh</a>
@@ -104,17 +115,26 @@
 
 		<section id="jadualSection" style="display: none; margin-top: 2rem;">
 			<div class="responsive-iframe">
-				<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQEzsEJvUJ82Exqdm2JowdAHV51nqwTXxtR_PRoB8YsyN6EthXCv9c0IHEel6kFLFEbhjQeOkLiliWF/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+				<iframe
+					src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQEzsEJvUJ82Exqdm2JowdAHV51nqwTXxtR_PRoB8YsyN6EthXCv9c0IHEel6kFLFEbhjQeOkLiliWF/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+			</div>
+			<div class="index">
+				<ul class="actions" style="display: flex; justify-content: center;">
+					<li class="actions" style="display: flex; justify-content: center;">
+						<a href="#" class="button" onclick="toggleJadual(); return false;">Tutup Kalendar</a>
+					</li>
+				</ul>
 			</div>
 		</section>
-		
+
 		<section class="wrapper style1 align-center">
 			<div class="inner">
 				<section class="wrapper style1 align-center">
 					<header>
 						<h2>Pakej Nur Qaseh Hall</h2>
 					</header>
-						<p>Semua pakej menawarkan perkhidmatan asas yang sama (fotografi, dekorasi, makanan). Pilihan bergantung pada bilangan tetamu dan keperluan tambahan seperti homestay atau kanopi luar.</p>
+					<p>Semua pakej menawarkan perkhidmatan asas yang sama (fotografi, dekorasi, makanan). Pilihan
+						bergantung pada bilangan tetamu dan keperluan tambahan seperti homestay atau kanopi luar.</p>
 					<div class="content">
 						<div class="table-wrapper responsive-table">
 							<table>
@@ -396,6 +416,105 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script>
+		// Initialize calendar
+		let currentDate = new Date();
+		let selectedDate = null;
+
+		const today = new Date();
+		today.setHours(0, 0, 0, 0);
+
+		function renderCalendar() {
+			const monthYearDisplay = document.getElementById('current-month-year');
+			const daysContainer = document.getElementById('calendar-days');
+
+			// Clear previous days
+			daysContainer.innerHTML = '';
+
+			// Set month/year display
+			const monthNames = ["Januari", "Februari", "Mac", "April", "Mei", "Jun",
+				"Julai", "Ogos", "September", "Oktober", "November", "Disember"];
+			monthYearDisplay.textContent = `${monthNames[currentDate.getMonth()]} ${currentDate.getFullYear()}`;
+
+			// Get first day of month and total days in month
+			const firstDay = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1).getDay();
+			const daysInMonth = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0).getDate();
+
+			// Adjust first day to match your weekday order (Isnin=0, Ahad=6)
+			const adjustedFirstDay = (firstDay + 6) % 7;
+
+
+
+			// Add empty cells for days before the first day of month
+			for (let i = 0; i < adjustedFirstDay; i++) {
+				const emptyDay = document.createElement('div');
+				emptyDay.className = 'day empty';
+				daysContainer.appendChild(emptyDay);
+			}
+
+			// Add days of the month
+			const today = new Date();
+			today.setHours(0, 0, 0, 0);
+
+			for (let day = 1; day <= daysInMonth; day++) {
+				const dayElement = document.createElement('div');
+				dayElement.className = 'day';
+				dayElement.textContent = day;
+
+				const date = new Date(currentDate.getFullYear(), currentDate.getMonth(), day);
+
+				// Highlight if selected
+				if (selectedDate && date.getTime() === selectedDate.getTime()) {
+					dayElement.classList.add('selected');
+				}
+
+				// Disable past dates
+				if (date <= today) {
+					dayElement.classList.add('disabled');
+				} else {
+					dayElement.addEventListener('click', () => selectDate(date));
+				}
+
+				// Highlight hari ini
+				if (date.getTime() === today.getTime()) {
+					dayElement.classList.add('today');
+				}
+
+				daysContainer.appendChild(dayElement);
+			}
+		}
+
+		function selectDate(date) {
+			selectedDate = date;
+			document.getElementById('tarikh').value = formatDateForInput(date);
+
+			// Clear the status message when selecting a new date
+			document.getElementById('statusDewan').textContent = 'Pilih Semak Tarikh';
+			document.getElementById('statusDewan').className = '';
+
+			renderCalendar();
+		}
+
+		function formatDateForInput(date) {
+			const year = date.getFullYear();
+			const month = String(date.getMonth() + 1).padStart(2, '0');
+			const day = String(date.getDate()).padStart(2, '0');
+			return `${year}-${month}-${day}`;
+		}
+
+		function prevMonth() {
+			currentDate.setMonth(currentDate.getMonth() - 1);
+			renderCalendar();
+		}
+
+		function nextMonth() {
+			currentDate.setMonth(currentDate.getMonth() + 1);
+			renderCalendar();
+		}
+
+		// Initialize
+		renderCalendar();
+
+		// Your existing semakTarikh function remains unchanged
 		function semakTarikh() {
 			const tarikh = document.getElementById("tarikh").value;
 			const status = document.getElementById("statusDewan");
@@ -404,7 +523,7 @@
 			status.className = "";
 
 			if (!tarikh) {
-				status.textContent = "Terlupa pilih tarikh ke tuu?";
+				status.textContent = "Sila pilih tarikh dahulu";
 				return;
 			}
 
@@ -417,13 +536,13 @@
 			hariIni.setHours(0, 0, 0, 0);
 
 			if (tarikhInput < hariIni) {
-				status.textContent = "Ni tarikh lepas la, cuma pilih hari lain pulak";
+				status.textContent = "Sila pilih tarikh selepas hari ini";
 				status.className = "tak-tersedia";
 				return;
 			}
 
 			if (tarikhInput.getTime() === hariIni.getTime()) {
-				status.textContent = "Serious lah hari ni nak tempah??";
+				status.textContent = "Sila pilih hari esok atau seterusnya";
 				status.className = "tak-tersedia";
 				return;
 			}
@@ -455,22 +574,39 @@
 				});
 		}
 	</script>
+
 	<script>
 		function toggleJadual() {
 			const section = document.getElementById("jadualSection");
+			const kalendarSection = document.getElementById("kalendar");
+
 			if (section.style.display === "none") {
+				// Show section first
 				section.style.display = "block";
-				// Optionally scroll ke bawah sikit
-				section.scrollIntoView({ behavior: "smooth" });
+
+				// Then scroll to it
+				setTimeout(() => {
+					section.scrollIntoView({
+						behavior: "smooth",
+						block: "start" // Scroll to top of section
+					});
+				}, 10); // Small delay to ensure display is updated
 			} else {
-				section.style.display = "none";
+				// First scroll to kalendar section
+				kalendarSection.scrollIntoView({
+					behavior: "smooth",
+					block: "start"
+				});
+
+				// Then hide the jadual section after scroll completes
+				setTimeout(() => {
+					section.style.display = "none";
+				}, 500); // Match this duration with your scroll animation
 			}
 		}
 	</script>
-	  
-	
-	
-	  
+
+
 
 </body>
 
