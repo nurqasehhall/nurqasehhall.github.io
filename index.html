@@ -99,7 +99,7 @@
 			<div class="content">
 				<h2>Management by Atas Studio</h2>
 				<p>Pakej kami dijayakan bersama Atas Studio, sebuah perkhidmatan fotografi profesional yang terkenal
-					dengan sentuhan seni dan kualiti visual bertaraf tinggi. Dengan pengalaman luas dalam bidang
+					dengan sentuhan seni dan kualiti visual bertaraf tinggi. Dengan pengalaman lebih daripada 7 tahun dalam bidang
 					perkahwinan, setiap momen berharga anda dirakam dengan penuh ketelitian dan rasa – hasil gambar dan
 					video yang bukan sahaja memukau, tetapi juga menjadi kenangan abadi yang bernilai.</p>
 				<ul class="actions stacked">
@@ -232,7 +232,7 @@
 					<section>
 						<span class="icon" style="display: inline-block; width: 40px; height: 40px; background-image: url('images/6.png'); background-size: contain;"></span>
 						<h3>Sistem PA & Pengacara Majlis</h3>
-						<p>Disediakan sistem audio profesional berserta pengacara majlis yang berpengalaman untuk mengendalikan perjalanan majlis dengan teratur, meriah dan penuh adat istiadat. Perkhidmatan ini membantu memastikan kelancaran majlis dari mula hingga akhir.						</p>
+						<p>Disediakan sistem audio profesional berserta pengacara majlis yang berpengalaman untuk mengendalikan perjalanan majlis dengan teratur, meriah dan penuh adat istiadat. Perkhidmatan ini membantu memastikan kelancaran majlis dari mula hingga akhir.</p>
 					</section>
 				</div>
 			</div>
@@ -242,7 +242,7 @@
 			<div class="inner">
 				<section class="wrapper style1 align-center">
 					<header>
-						<h2>Pakej Nur Qaseh Hall</h2>
+						<h2>Perbezaan Antara Pakej Nur Qaseh Hall</h2>
 					</header>
 					<p>Semua pakej menawarkan perkhidmatan fotografi, dekorasi, makanan dan banyak lagi. Pilihan
 						bergantung pada bilangan tetamu dan keperluan tambahan seperti homestay, wall candy dan kanopi
@@ -331,7 +331,7 @@
 					<li><a href="mailto:nurqasehhall@gmail.com" class="icon style2 fa-envelope"><span
 								class="label">Email</span></a></li>
 				</ul>
-				<p>&copy; Nur Qaseh Hall. Website developed by @<a
+				<p>&copy; Copyright <span id="current-year"></span> by Nur Qaseh Hall. Website developed and maintained by @<a
 						href="https://www.instagram.com/hahafizin/">hahafizin</a>.</p>
 			</div>
 		</footer>
@@ -347,6 +347,10 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script>
+		
+		const year = new Date().getFullYear();
+		document.getElementById("current-year").textContent = year;
+		
 		// Initialize calendar
 		let currentDate = new Date();
 		let selectedDate = null;

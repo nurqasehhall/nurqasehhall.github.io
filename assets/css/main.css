@@ -88,6 +88,14 @@ table td {
 
 /* custom calendar */
 
+#kalendar {
+    min-height: 100vh; /* Gunakan viewport height penuh */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Pusatkan vertikal */
+    padding: 2rem 0; /* Beri sedikit padding */
+}
+
 #customDatePicker {
 	max-width: 300px;
 	margin: 0 auto;
@@ -393,7 +401,7 @@ body {
 	-ms-overflow-style: scrollbar;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
 
 	html,
 	body {
@@ -1910,7 +1918,7 @@ hr {
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
 
 	.row {
 		display: flex;
@@ -2624,7 +2632,7 @@ form>.fields>.field.quarter {
 	width: calc(25% - 0.375rem);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
 
 	form>.fields {
 		width: calc(100% + 3rem);
@@ -3164,7 +3172,7 @@ ul.actions.fit.stacked {
 	width: 100%;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
 
 	ul.actions:not(.fixed) {
 		-moz-flex-direction: column;
@@ -5910,7 +5918,7 @@ body.is-preload .spotlight.onload-image-fade-in .image img {
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
 
 	.spotlight.style4 .content {
 		max-width: 80%;
@@ -6090,7 +6098,7 @@ body.is-preload .spotlight.onload-image-fade-in .image img {
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
 
 	.spotlight.style5 .content {
 		max-width: 80%;
@@ -6939,7 +6947,7 @@ body.is-preload .gallery.onload-fade-in article .image img {
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
 
 	.gallery.style1 article {
 		width: 100%;
@@ -6983,7 +6991,7 @@ body.is-preload .gallery.onload-fade-in article .image img {
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
 
 	.gallery.style1.small article {
 		width: 50%;
@@ -7027,7 +7035,7 @@ body.is-preload .gallery.onload-fade-in article .image img {
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
 
 	.gallery.style1.big article {
 		width: 100%;
@@ -8126,7 +8134,7 @@ body.is-preload .items.onload-fade-in>*>.inner {
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
 
 	.items.style1.big>*:nth-child(-n + 2) {
 		border-top-width: 1px;
@@ -8363,7 +8371,7 @@ body.is-preload .items.onload-fade-in>*>.inner {
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
 
 	.items.style2.big>*:nth-child(-n + 2) {
 		border-top-width: 1px;
@@ -8506,7 +8514,7 @@ body.is-preload .items.onload-fade-in>*>.inner {
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
 
 	.items.style3.big>* {
 		padding: 1.3125rem 1.3125rem 0.1rem 1.3125rem;
@@ -8616,7 +8624,7 @@ body.is-preload .items.onload-fade-in>*>.inner {
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
 
 	.index>* {
 		-moz-flex-direction: column;
