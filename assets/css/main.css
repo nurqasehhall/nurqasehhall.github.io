@@ -11,7 +11,7 @@
 .responsive-iframe {
 	position: relative;
 	width: 100%;
-	padding-bottom: 80vh;
+	padding-bottom: 70vh;
 	/* tinggi dia, ikut suka — 75% dari viewport height */
 	height: 0;
 	overflow: hidden;
