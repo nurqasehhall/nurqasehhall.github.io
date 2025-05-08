@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900");
 
 /*
 	Story by HTML5 UP
@@ -11,7 +12,7 @@
 .responsive-iframe {
 	position: relative;
 	width: 100%;
-	padding-bottom: 70vh;
+	padding-bottom: 75vh;
 	/* tinggi dia, ikut suka — 75% dari viewport height */
 	height: 0;
 	overflow: hidden;
@@ -54,8 +55,6 @@ input[type="date"] {
 	/* pink border sebab majlis kahwin lah katakan */
 	border-radius: 30px;
 	background-color: #00000012;
-	/* lembut gitu */
-	font-family: 'Arial', sans-serif;
 	font-size: 1rem;
 	color: #333;
 }
@@ -88,7 +87,7 @@ table td {
 
 /* custom calendar */
 
-#kalendar {
+#kalendar, #jadualSection {
     min-height: 100vh; /* Gunakan viewport height penuh */
     display: flex;
     flex-direction: column;
@@ -234,8 +233,9 @@ table td {
 	font-weight: bold;
 }
 
-
-
+body h1, body h2 {
+	font-family: "Lora";
+  }
 
 /*==========================================================================================*/
 html,
@@ -484,8 +484,8 @@ body,
 input,
 select,
 textarea {
-	font-family: "Source Sans Pro", Helvetica, sans-serif;
-	font-size: 1rem;
+	font-family: "Poppins";
+	font-size: 0.9rem;
 	font-weight: 300;
 	line-height: 1.65;
 }
@@ -517,7 +517,7 @@ p {
 }
 
 p.major {
-	font-size: 1.25rem;
+	font-size: 1rem;
 }
 
 h1,
@@ -543,7 +543,7 @@ h6 a {
 }
 
 h1 {
-	font-size: 3.5rem;
+	font-size: 3.2rem;
 	line-height: 1.2;
 }
 
